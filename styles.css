@@ -3,13 +3,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
+    background-color: #f4f4f4;
     color: #333;
 }
 
 /* Header */
 header {
-    background-color: #0077b6;
+    background-color: #003366;
     padding: 20px;
     text-align: center;
     color: white;
@@ -22,10 +22,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -39,54 +36,78 @@ nav ul li a:hover {
     color: #FFD700; /* Gold accent */
 }
 
-/* Enhanced Heading */
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFD700; /* Gold for premium feel */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+/* About Us Page - Side-by-Side Layout */
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Hero Section */
-.hero {
-    background: url('https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/hi-vis-supply-construction-site%201.jpg?raw=true') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    padding: 60px 20px;
+.company-info .content {
+    flex: 1;
+}
+
+.company-info .image img {
+    max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+/* Services Page - Side-by-Side Layout */
+.service-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-section .text {
+    flex: 1;
+}
+
+.service-section img {
+    max-width: 350px;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
-.hero .content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
+/* Portfolio Page - Presentable Image Grid */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Page - Styled Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
     margin: auto;
-    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-.hero .content h2 {
-    margin-top: 0;
-    font-size: 2.5rem;
-}
-
-.hero .content p {
-    line-height: 1.6;
-    font-size: 1.2rem;
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* Call-to-action button */
@@ -98,21 +119,20 @@ h1 {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .cta-button:hover {
-    background-color: #0077b6;
+    background-color: #003366;
     color: white;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #0077b6;
+    background-color: #003366;
     color: white;
     margin-top: 40px;
     box-shadow: 0px -4px 6px rgba(0,0,0,0.2);
@@ -123,6 +143,16 @@ footer {
     nav ul {
         flex-direction: column;
         text-align: center;
+    }
+
+    .company-info,
+    .service-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
     }
 
     .hero {
