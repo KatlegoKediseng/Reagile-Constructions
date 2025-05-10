@@ -185,6 +185,22 @@ section img {
 section:not(.reverse) {
     flex-direction: row;
 }
+/* Default section styling */
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Alternating Background Colors */
+section:nth-child(odd) {
+    background-color: white; /* First, third, etc. */
+}
+
+section:nth-child(even) {
+    background-color: #0077b6; /* Second, fourth, etc. */
+    color: white; /* Adjust text color for readability */
+}
 
 /* Reverse: Image on Left */
 section.reverse {
