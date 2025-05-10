@@ -49,62 +49,63 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-/* Sections */
-section {
-    padding: 40px;
-    background-color: white;
-    margin: 20px;
+/* Hero Section */
+.hero {
+    background: url('https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/hi-vis-supply-construction-site%201.jpg?raw=true') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 60px 20px;
     border-radius: 10px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
 }
 
-/* Company Info Section */
-.company-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.company-info .content {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.company-info .content h2 {
-    margin-top: 0;
-}
-
-.company-info .content p {
-    line-height: 1.6;
-}
-
-.company-info .image {
-    flex: 1;
-}
-
-.company-info .image img {
-    max-width: 100%;
-    height: auto;
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
     border-radius: 10px;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero .content h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.hero .content p {
+    line-height: 1.6;
+    font-size: 1.2rem;
 }
 
 /* Call-to-action button */
 .cta-button {
     display: inline-block;
-    background-color: #0077b6;
-    color: white;
+    background-color: #FFD700;
+    color: black;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
 }
 
 .cta-button:hover {
-    background-color: #FFD700;
-    color: black;
+    background-color: #0077b6;
+    color: white;
 }
 
 /* Footer */
@@ -117,45 +118,6 @@ footer {
     box-shadow: 0px -4px 6px rgba(0,0,0,0.2);
 }
 
-/* Contact Form */
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-}
-
-.contact-form label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #0077b6;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.contact-form button:hover {
-    background-color: #FFD700;
-    color: black;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -163,15 +125,15 @@ footer {
         text-align: center;
     }
 
-    .company-info {
-        flex-direction: column;
+    .hero {
+        padding: 40px 20px;
     }
 
-    .company-info .content {
-        padding-right: 0;
+    .hero .content h2 {
+        font-size: 2rem;
     }
 
-    section {
-        padding: 20px;
+    .hero .content p {
+        font-size: 1rem;
     }
 }
