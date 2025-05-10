@@ -192,17 +192,3 @@ section {
     margin: auto;
 }
 
-/* Alternating Background Colors */
-section:nth-child(odd) {
-    background-color: white; /* First, third, etc. */
-}
-
-section:nth-child(even) {
-    background-color: #0077b6; /* Second, fourth, etc. */
-    color: white; /* Adjust text color for readability */
-}
-
-/* Reverse: Image on Left */
-section.reverse {
-    flex-direction: row-reverse;
-}
