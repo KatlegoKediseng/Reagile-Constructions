@@ -38,7 +38,6 @@ nav ul li a:hover {
 
 /* Home Page - Background Fix */
 .hero {
-    background: url('hi-vis-supply-construction-site 1.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     color: white;
