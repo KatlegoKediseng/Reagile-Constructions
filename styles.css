@@ -164,31 +164,3 @@ footer {
     height: auto; 
     border-radius: 10px; 
 }
-/* Section Styling */
-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Alternating Layout */
-section img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Default: Image on Right */
-section:not(.reverse) {
-    flex-direction: row;
-}
-/* Default section styling */
-section {
-    padding: 40px;
-    max-width: 1000px;
-    margin: auto;
-}
-
