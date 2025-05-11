@@ -38,7 +38,7 @@ nav ul li a:hover {
 
 /* Home Page - Background Image Fix */
 .hero {
-    height: 100vh;
+    height: 100vh; /* Full screen */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,10 +46,10 @@ nav ul li a:hover {
     text-align: center;
     background: url('images/hi-vis-supply.jpg') no-repeat center center;
     background-size: cover;
+    background-position: center;
     position: relative;
     color: white;
 }
-
 .hero::before {
     content: "";
     position: absolute;
