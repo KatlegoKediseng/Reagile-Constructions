@@ -2,58 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reagile Construction | Building Excellence</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Reagile Construction</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+    <header class="bg-dark text-white text-center py-4">
+    <h1 class="fw-bold">Reagile Construction | Building Excellence</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
-        </nav>
-    </header> <!-- Close the header tag here -->
-  <section class="hero">
-    <div class="content">
-        <h2>Building a Better Future</h2>
-        <p>At Reagile Constructions, we specialize in delivering top-notch civil and residential construction solutions tailored to meet your unique needs. With a commitment to quality, innovation, and customer satisfaction, we transform your vision into reality. Whether you're planning a new home, renovating an existing space, or embarking on a large-scale civil project, our expert team is here to guide you every step of the way. Discover the difference of working with a construction partner who prioritizes excellence and your peace of mind.</p>
-        <a href="contact.html" class="cta-button">Get a Free Quote</a>
+        </div>
     </div>
-</section>
- <section class="about">
-        <h3>Why Choose Us?</h3>
-        <p>With decades of industry experience, we excel in delivering high-quality construction projects that stand the test of time.
-            Our dedication to excellence is evident in every build, ensuring that your project is completed to the highest standards.</p>
-        <ul>
-            <li>✅ Reliable & Experienced Contractors
-Our team comprises seasoned professionals who bring a wealth of knowledge and expertise to every project. We pride ourselves on our reliability and the strong relationships we build with our clients.</li>
-            <li>✅ Comprehensive Civil & Residential Construction Services
-From residential homes to large-scale civil projects, we offer a full range of construction services. Our expertise spans across various types of construction, ensuring that we can meet all your needs with precision and care.</li>
-            <li>✅ Commitment to Quality & Innovation
-We are committed to using the latest technologies and innovative techniques to deliver superior results. Our focus on quality ensures that every project is completed to the highest standards, providing you with a durable and aesthetically pleasing outcome.</li>
-        </ul>
+</nav>
+    </header>
+
+    <section class="hero container text-center py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold">Building a Better Future</h2>
+                <p class="lead">We specialize in top-notch civil and residential construction tailored to your needs.</p>
+                <a href="contact.html" class="cta-button">Get a Free Quote</a>
+            </div>
+        </div>
     </section>
 
-    <section class="testimonials">
-        <h3>What Our Clients Say</h3>
-        <blockquote>"Reagile Construction transformed our home beyond expectations. The attention to detail and craftsmanship were exceptional. They listened to our needs and delivered a beautiful, functional space that we love. Exceptional work!" - Happy Client</blockquote>
-        <blockquote>"Professional and efficient! The civil construction project was seamless from start to finish. The team was communicative, punctual, and delivered on every promise. Their expertise and dedication to quality made all the difference." - Business Owner</blockquote>
-        <blockquote>"Choosing Reagile Construction was the best decision we made for our new home. Their innovative approach and commitment to quality were evident in every aspect of the build. The team was friendly, professional, and always available to answer our questions. We couldn't be happier with the result!" - Satisfied Homeowner</blockquote>
-        <blockquote>"Reagile Construction handled our commercial project with utmost professionalism. Their ability to manage complex tasks and deliver on time was impressive. The quality of their work exceeded our expectations, and we highly recommend them for any construction needs." - Commercial Client</blockquote>
-        <blockquote>"The renovation of our office space was handled flawlessly by Reagile Construction. They were attentive to our requirements and provided creative solutions that enhanced the functionality and aesthetics of our workspace. Their dedication to excellence is truly commendable." - Office Manager</blockquote>
+    <section class="about container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid rounded shadow" src="House 1 (1).jpg" alt="House Image">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Why Choose Us?</h3>
+                <p>With decades of industry experience, we excel in delivering high-quality construction projects that stand the test of time.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">✅ Reliable & Experienced Contractors</li>
+                    <li class="list-group-item">✅ Comprehensive Civil & Residential Services</li>
+                    <li class="list-group-item">✅ Commitment to Quality & Innovation</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <section class="testimonials container py-5">
+        <h3 class="text-center fw-bold">What Our Clients Say</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <blockquote class="blockquote">"Reagile Construction transformed our home beyond expectations!" - Happy Client</blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">"Professional and efficient! The civil project was seamless." - Business Owner</blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">"Choosing Reagile Construction was the best decision for our new home!" - Satisfied Homeowner</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2025 Reagile Construction. All Rights Reserved.</p>
-        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/" class="text-warning">Facebook</a> | <a href="https://www.instagram.com/" class="text-warning">Instagram</a> | <a href="https://www.linkedin.com/" class="text-warning">LinkedIn</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
