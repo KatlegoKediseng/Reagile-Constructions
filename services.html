@@ -2,63 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Services | Reagile Construction</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Our Services</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+    <header class="bg-dark text-white text-center py-4">
+        <h1 class="fw-bold">Our Services</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-<section class="service-section civil-construction">
-    <div class="text">
-        <h2>Civil Construction</h2>
-        <p>We specialize in large-scale infrastructure projects, ensuring durability, innovation, and high standards.</p>
-        <ul>
-            <li>🏗️ Road and Bridge Construction</li>
-            <li>🏢 Commercial and Industrial Infrastructure</li>
-            <li>🌍 Water Supply & Drainage Systems</li>
-        </ul>
-    </div>
-    <img src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/civil.jpg?raw=true" alt="Civil Construction Project">
-</section>
 
-<section class="service-section residential-construction">
-    <div class="text">
-        <h2>Residential Construction</h2>
-        <p>From custom-built homes to apartment complexes, we bring dreams to life with precision and quality.</p>
-        <ul>
-            <li>🏠 New Home Construction</li>
-            <li>🔨 Renovations & Remodeling</li>
-            <li>📐 Architectural & Structural Design</li>
-        </ul>
-    </div>
-    <img src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/House%201.jpg?raw=true" alt="Residential Construction Project">
-</section> 
-    <section class="project-management">
-        <h2>Project Management & Consulting</h2>
-        <p>Expert guidance and oversight to ensure seamless execution and cost-effective solutions.</p>
-        <ul>
-            <li>📑 Construction Planning & Budgeting</li>
-            <li>⚙️ Site Inspection & Safety Compliance</li>
-            <li>📊 Sustainability & Energy-Efficient Designs</li>
-        </ul>
+    <section class="container text-center py-5">
+        <h2 class="fw-bold">Building Excellence Through Expertise</h2>
+        <p class="lead">Explore our top-tier civil and residential construction services.</p>
     </section>
 
-    <footer>
+    <section class="container py-5">
+        <h2 class="text-center fw-bold">Our Core Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-4 shadow">
+                    <img class="img-fluid rounded" src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/civil.jpg?raw=true" alt="Civil Construction">
+                    <h3 class="fw-bold mt-3">Civil Construction</h3>
+                    <p>We specialize in large-scale infrastructure projects, ensuring durability and innovation.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">🏗️ Road & Bridge Construction</li>
+                        <li class="list-group-item">🏢 Commercial & Industrial Infrastructure</li>
+                        <li class="list-group-item">🌍 Water Supply & Drainage Systems</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow">
+                    <img class="img-fluid rounded" src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/House%201.jpg?raw=true" alt="Residential Construction">
+                    <h3 class="fw-bold mt-3">Residential Construction</h3>
+                    <p>Bringing dreams to life with custom-built homes, renovations, and design expertise.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">🏠 New Home Construction</li>
+                        <li class="list-group-item">🔨 Renovations & Remodeling</li>
+                        <li class="list-group-item">📐 Architectural & Structural Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow">
+                    <img class="img-fluid rounded" src="afro-american-man-suit-holding-documents-talking-female-boss.jpg" alt="Residential Construction">
+                    <h3 class="fw-bold mt-3">Project Management & Consulting</h3>
+                    <p>Expert guidance to ensure seamless execution and cost-effective solutions.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">📑 Construction Planning & Budgeting</li>
+                        <li class="list-group-item">⚙️ Site Inspection & Safety Compliance</li>
+                        <li class="list-group-item">📊 Sustainability & Energy-Efficient Designs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2025 Reagile Construction. All Rights Reserved.</p>
-        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/" class="text-warning">Facebook</a> | <a href="https://www.instagram.com/"" class="text-warning">Instagram</a> | <a href="https://www.linkedin.com/"" class="text-warning">LinkedIn</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
