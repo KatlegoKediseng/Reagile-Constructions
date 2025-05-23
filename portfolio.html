@@ -2,61 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Reagile Construction</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Our Project Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+    <header class="bg-dark text-white text-center py-4">
+        <h1 class="fw-bold">Our Project Portfolio</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="portfolio-intro">
-        <h2>Building Excellence, One Project at a Time</h2>
-        <p>Explore some of our recent civil and residential construction projects.</p>
+    <section class="container text-center py-5">
+        <h2 class="fw-bold">Building Excellence, One Project at a Time</h2>
+        <p class="lead">Explore some of our recent civil and residential construction projects.</p>
     </section>
 
-    <section class="project-gallery">
-        <h2>Featured Projects</h2>
-        <div class="project">
-            <img src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/road.jpg?raw=true" alt="Road Construction Project">
-            <h3>Highway Development</h3>
-            <p>Completed a state-of-the-art highway with superior engineering and durability.</p>
-        </div>
-
-        <div class="project">
-            <img src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/residantal%202.jpeg?raw=true" alt="Residential Home Construction">
-            <h3>Modern Residential Estate</h3>
-            <p>Designed and constructed luxury homes with sustainable features.</p>
-        </div>
-
-        <div class="project">
-            <img src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/bridge.jpg?raw=true" alt="Bridge Infrastructure">
-            <h3>Bridge Infrastructure</h3>
-            <p>Executed a high-strength bridge project enhancing connectivity.</p>
+    <section class="container py-5">
+        <h2 class="text-center fw-bold">Featured Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <img class="img-fluid rounded" src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/road.jpg?raw=true" alt="Road Construction Project">
+                    <h3 class="fw-bold mt-3">Highway Development</h3>
+                    <p>Completed a state-of-the-art highway with superior engineering and durability.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <img class="img-fluid rounded" src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/residantal%202.jpeg?raw=true" alt="Residential Home Construction">
+                    <h3 class="fw-bold mt-3">Modern Residential Estate</h3>
+                    <p>Designed and constructed luxury homes with sustainable features.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <img class="img-fluid rounded" src="https://github.com/KatlegoKediseng/Reagile-Constructions/blob/main/bridge.jpg?raw=true" alt="Bridge Infrastructure">
+                    <h3 class="fw-bold mt-3">Bridge Infrastructure</h3>
+                    <p>Executed a high-strength bridge project enhancing connectivity.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="testimonials">
-        <h2>Client Testimonials</h2>
-        <blockquote>"Reagile Construction exceeded our expectations! Reliable and professional." - Satisfied Client</blockquote>
-        <blockquote>"From start to finish, the project was handled with care and expertise!" - Business Partner</blockquote>
+    <section class="container py-5">
+        <h2 class="text-center fw-bold">Client Testimonials</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <blockquote>"Reagile Construction exceeded our expectations! Reliable and professional." - Satisfied Client</blockquote>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <blockquote>"From start to finish, the project was handled with care and expertise!" - Business Partner</blockquote>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2025 Reagile Construction. All Rights Reserved.</p>
-        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/" class="text-warning">Facebook</a> | <a href="https://www.instagram.com/" class="text-warning">Instagram</a> | <a href="https://www.linkedin.com/" class="text-warning">LinkedIn</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
